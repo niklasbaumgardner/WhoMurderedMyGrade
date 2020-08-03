@@ -1,0 +1,10 @@
+.idea
+.idea/workspace.xml
+vendor
+node_modules
+vendor/composer.phar
+lib/localize.inc.php
+localize.inc.php
+tests/tests/localize.inc.php
+.idea/workspace.xml
+.idea

@@ -1,0 +1,27 @@
+<?php
+require __DIR__ . '/lib/game.inc.php';
+$view = new Game\GameView($game);
+
+//if(!$view->protect($site, $user)) {
+//    header("location: " . $view->getProtectRedirect());
+//    exit;
+//}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pick Your Character</title>
+    <link href="game.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+<fieldset>
+    <form method="post" action="welcome-post.php">
+        <?php echo $view->cards(); ?>
+    </form>
+</fieldset>
+
+</body>
+</html>

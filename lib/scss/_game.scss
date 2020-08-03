@@ -1,0 +1,208 @@
+html, body, header, footer, hgroup, nav, article, section, figure,
+figcaption, h1, h2, h3, ul, li, body, div, p, img {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    font-family: Arial,sans-serif;
+}
+
+div.card {
+    display: inline-block;
+}
+
+fieldset {
+    margin: auto;
+    max-width: 20em;
+    padding: 1em;
+}
+
+fieldset > form {
+    text-align: left;
+}
+
+form {
+    display: block;
+    text-align: center;
+}
+
+div.game {
+    display: inline-block;
+    position: relative;
+    margin: 1em auto;
+    width: 96vw;
+    height: 96vw;
+    max-width: 1000px;
+    max-height: 1000px;
+    border: 0;
+    box-sizing: border-box;
+    background-image: url('../images/board.jpg');
+    background-size: 100% 100%;
+    padding-top: 1.3em;
+    padding-bottom: 2.9em;
+    padding-left: 3.2em;
+    padding-right: 2.35em;
+}
+
+div.game > div.board {
+    display: flex;
+    flex-direction: column;
+    margin: 2.2% 0 0 5.5%;
+    width: 90.5%;
+    height: 93.1%;
+}
+
+
+
+div.game div.row {
+    display: flex;
+    flex: 1 1 auto;
+    padding: 0;
+    width: 100%;
+    height: 4%;
+    min-height: 4%;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+div.game div.cell {
+    flex: 1 0 4.16%;
+    vertical-align: top;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+div.dice-area > p {
+    font-size: 110%;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.dice-area {
+    position: absolute;
+    top: 25.7em;
+    /*left: 42em;*/
+    left: 3.5em;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid black;
+    width: 11.7em;
+    height: 16em;
+    background-color: rgba(255,255,255, 0.7);
+    /*filter: blur(1px);*/
+    /*-webkit-filter: blur(1px);*/
+}
+
+div.dice {
+    position: absolute;
+    top: 7.3em;
+    left: 4em;
+}
+
+div.cell button {
+    border: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00ff0033;
+}
+
+.player-piece {
+
+}
+
+div.print-only {
+    display: none;
+}
+
+@media print {
+    div.print-only {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media print {
+    div.print-only div.held-cards img {
+        max-width: 5em;
+
+        margin: 1em;
+    }
+}
+
+@media print {
+    div.print-only div.other-cards img {
+        max-width: 5em;
+        margin: 1em;
+    }
+}
+
+@media print {
+    div.print-only > div.held-cards > p {
+        display: inline;
+    }
+}
+
+@media print {
+    div.print-only > div.other-cards > p {
+        display: inline-block;
+    }
+}
+
+@media print {
+    div.print-only > p {
+        font-style: italic;
+    }
+}
+
+@media print {
+    fieldset {
+        display: none;
+    }
+
+    .inputField {
+        display: block;
+        width:150px;
+        height:195px;
+        position: absolute;
+        top: 240px;
+        right: 200px;
+    }
+
+
+    .box{
+        width:200px;
+        height:280px;
+        position: absolute;
+        top: 195px;
+        right: 185px;
+
+    }
+
+    p.goButton{
+        top: 285px;
+        right: 185px;
+    }
+
+    .red{
+        background: lightgray;
+        opacity: 50%;
+    }
+
+    .block{
+        display: block;
+        padding: 5px;
+    }
+}
+
+.games {
+    margin: 25px;
+}
+
+.gamesHeader {
+    border-bottom: 2px solid black;
+    font-size: 2em;
+}
